@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joysticks", "Joysticks.csproj", "{44B5EA84-A25E-E797-531B-91FD596C8E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battle", "Battle.csproj", "{35E481AB-A251-1D20-E536-18BE05FB2FAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44B5EA84-A25E-E797-531B-91FD596C8E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B5EA84-A25E-E797-531B-91FD596C8E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B5EA84-A25E-E797-531B-91FD596C8E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B5EA84-A25E-E797-531B-91FD596C8E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E481AB-A251-1D20-E536-18BE05FB2FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E481AB-A251-1D20-E536-18BE05FB2FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E481AB-A251-1D20-E536-18BE05FB2FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E481AB-A251-1D20-E536-18BE05FB2FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
