@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 9204699224032717017}
   - component: {fileID: -5765835157918241443}
   - component: {fileID: -1221494002676171468}
+  - component: {fileID: 4749612228973598543}
+  - component: {fileID: 3202896930257408218}
   m_Layer: 9
   m_Name: SimpleProjectile
   m_TagString: Untagged
@@ -27,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9204699224032717016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0131, y: 2.0004, z: 0}
-  m_LocalScale: {x: 0.019505305, y: 0.019755954, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.043246463, y: 0.00504613, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -115,7 +117,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -131,3 +133,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.48, y: 6.29}
   m_EdgeRadius: 0
+--- !u!114 &4749612228973598543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9204699224032717016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21562ee3bfcea22489d83bc363e3c142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3202896930257408218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9204699224032717016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85931c1c8babeb44ea6854c8514bd60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

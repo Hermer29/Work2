@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{012B217B-E499-84A9-69B1-FD7BD8EF69C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -55,13 +56,249 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\CreateDLL\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Packager\Assets\Export.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\WindowLeftTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\NestedLoops.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ToLookupTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\GenerateTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Fold.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Rank.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\GenerateByIndex.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Backsert.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Pipe.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\GroupAdjacent.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SkipLastTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AtMostTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\PendNode.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\RandomSubset.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Exclude.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\RepeatTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ForEach.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Choose.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ToHashSet.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\FullGroupJoin.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\OrderedMerge.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\CartesianTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\CurrentThreadCultureScope.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\Comparer.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Reactive\Observable.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Unfold.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\RightJoinTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SortedMergeTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ScanRightTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ToDelimitedString.g.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Transpose.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ScanBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ListLike.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Assert.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BacksertTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SubjectTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\FallbackIfEmpty.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Consume.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Extensions.g.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SampleData.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\RunLengthEncode.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\EquiZipTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\WindowRight.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ForEachTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ExactlyTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ExceptByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FillForwardTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ScanByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\LeftJoinTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\OrderBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SubsetTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\DistinctByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TakeUntilTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Delegating.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SliceTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Experimental\ExperimentalEnumerable.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AcquireTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ToDelimitedStringTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\RunLengthEncodeTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SegmentTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Extensions.ToDataTable.g.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\AssemblyInfo.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\OrderByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\DistinctBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\FillBackward.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ToDataTable.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ReadOnlyCollection.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PermutationsTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ConsumeTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AppendTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\FullJoin.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\KeyValuePair.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Batch.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TakeLastTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Aggregate.g.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PairwiseTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TrySingleTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\PartialSort.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TransposeTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Subsets.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\RandomSubsetTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ToArrayByIndexTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PartitionTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FullJoinTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\WatchableEnumerator.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\CountMethods.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TraverseTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ZipLongest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\NullArgumentTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\InterleaveTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Prepend.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ScanRight.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Permutations.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\TagFirstLast.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\IndexTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Generate.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Reactive\Subject.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\TakeLast.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\Combinatorics.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\StartsWithTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\CountDownTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PrependTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SplitTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Insert.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Lead.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\MaxByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FromTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\CountByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Split.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\RandomTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ToDictionaryTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ChooseTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\AggregateRight.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\SkipUntil.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Acquire.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Flatten.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\EvaluateTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BreakingFunc.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\From.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\EquiZip.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SkipUntilTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ReturnTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ZipImpl.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\bld\ExtensionsGenerator\Program.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\IndexByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\CountBetweenTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Experimental\Aggregate.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\Program.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Fold.g.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\UnfoldTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\OrderByDirection.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ToDataTableTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TestingSequence.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ToDelimitedString.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Interleave.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\RankTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BreakingReadOnlyList.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ZipLongestTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\MaxBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FillBackwardTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BreakingSequence.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ExceptBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Scan.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Experimental\Await.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\PadStart.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\MoveTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\TakeUntil.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AssertThrowsArgument.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ZipShortest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Move.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\IndexBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\WindowTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\SequenceException.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\RightJoin.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Index.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Pairwise.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FallbackIfEmptyTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Slice.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\WindowLeft.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\MinBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Disposable.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\AssertCount.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Shuffle.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Return.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Experimental\Memoize.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BreakingList.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\StartsWith.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FlattenTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\CountDown.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ReverseComparer.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TakeEveryTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AggregateTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PadTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Append.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AssertCountTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ToLookup.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TagFirstLastTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ScanTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\InsertTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TraceTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\Scope.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TestExtensions.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\EqualityComparer.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\LeadTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Repeat.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\LagTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BreakingAction.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Evaluate.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Pad.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BatchTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Partition.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AggregateRightTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\SortedMerge.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FoldTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ToArrayByIndex.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AssertTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\AtLeastTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BreakingReadOnlyCollection.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PipeTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\PreScan.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Random.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\MinByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Traverse.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\BreakingCollection.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\CountBy.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ShuffleTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\MemoizeTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PartialSortByTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Window.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\EndsWith.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\ToDictionary.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Trace.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\LeftJoin.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\EndsWithTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\SkipLast.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Experimental\TrySingle.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PartialSortTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SequenceReader.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\SequenceTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Segment.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\CompareCountTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Cartesian.g.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\TestException.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ExcludeTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Lookup.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\MoreEnumerable.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\FillForward.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Lag.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\WindowRightTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PadStartTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\FullGroupJoinTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\TakeEvery.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\Enumerable.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\PreScanTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq\Sequence.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\ZipShortestTest.cs" />
+    <Compile Include="Assets\Plugins\MoreLINQ-3.3.2\MoreLinq.Test\GroupAdjacentTest.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Plugins\NuGetForUnity-master\Assets\csc.rsp" />
-     <None Include="Assets\Plugins\NuGetForUnity-master\Packager\ProjectSettings\ProjectVersion.txt" />
-     <None Include="Assets\Plugins\NuGetForUnity-master\ProjectSettings\ProjectVersion.txt" />
+    <None Include="Assets\Plugins\MoreLINQ-3.3.2\COPYING.txt" />
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity\2020.1.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -251,350 +488,365 @@
     <Reference Include="UnityEditor">
       <HintPath>D:\Unity\2020.1.4f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="mscorlib">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
-    <Reference Include="System">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll</HintPath>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
     </Reference>
-    <Reference Include="System.Core">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll</HintPath>
+    <Reference Include="Zenject-usage">
+      <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.Serialization">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll</HintPath>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.AppContext">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Concurrent">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.NonGeneric">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Specialized">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Annotations">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
     </Reference>
     <Reference Include="System.Console">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Common">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Debug">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Process">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Tools">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Dynamic.Runtime">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Calendars">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Extensions">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
     </Reference>
     <Reference Include="System.IO">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Pipes">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Expressions">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Parallel">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Queryable">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
     </Reference>
-    <Reference Include="System.Net.Http.Rtc">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NameResolution">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NetworkInformation">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Ping">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Requests">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Security">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Sockets">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
     </Reference>
     <Reference Include="System.ObjectModel">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.ILGeneration">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.Lightweight">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Extensions">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Reader">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.ResourceManager">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Writer">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Extensions">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Handles">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Numerics">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Claims">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.SecureString">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Duplex">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Http">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.NetTcp">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Primitives">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Security">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.RegularExpressions">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Overlapped">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Thread">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.ThreadPool">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Timer">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XDocument">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlDocument">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -679,9 +931,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Joysticks.csproj">
+      <Project>{44B5EA84-A25E-E797-531B-91FD596C8E56}</Project>
+      <Name>Joysticks</Name>
+    </ProjectReference>
     <ProjectReference Include="Battle.csproj">
       <Project>{35E481AB-A251-1D20-E536-18BE05FB2FAE}</Project>
       <Name>Battle</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{D770DD43-37E0-B491-967B-61EB697C3C94}</Project>
+      <Name>Zenject-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-ReflectionBaking-Editor.csproj">
+      <Project>{4E87605F-139B-28A5-7119-317960C5C072}</Project>
+      <Name>Zenject-ReflectionBaking-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-PoolMonitor-Editor.csproj">
+      <Project>{F2F7CA6F-4190-B370-FC0A-9B9BCEBE57B3}</Project>
+      <Name>Zenject-PoolMonitor-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject.csproj">
+      <Project>{405D2632-82B0-F62A-7D0B-521C1BC344CC}</Project>
+      <Name>Zenject</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

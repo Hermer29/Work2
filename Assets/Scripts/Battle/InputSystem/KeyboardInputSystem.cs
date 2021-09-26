@@ -1,12 +1,11 @@
-﻿using System;
-using UnityEngine;
-using Work2.Battle.Player.Movement;
+﻿using UnityEngine;
+using Work2.Battle.Entities;
 
 namespace Work2.Battle.InputSystem
 {
     public class KeyboardInputSystem : MonoBehaviour
     {
-        [SerializeField] private PlayerMovement _movable;
+        [SerializeField] private Movable _movable;
       
         private void Update()
         {

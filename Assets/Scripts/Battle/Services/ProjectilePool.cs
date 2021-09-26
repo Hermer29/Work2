@@ -1,9 +1,9 @@
-﻿using Assets.Scripts.Battle.Services.Abstract;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using Work2.Battle.Services.Abstract;
 using Work2.Battle.Services.Exceptions;
 
-namespace Assets.Scripts.Battle.Services
+namespace Work2.Battle.Services
 {
     public class ProjectilePool : MonoBehaviour
     {

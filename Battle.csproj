@@ -55,17 +55,31 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Battle\Attackers\BasicAttacker.cs" />
-    <Compile Include="Assets\Scripts\Battle\Services\ProjectileWrapper.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\DelayState.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Attack\BasicAttacker.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\Entities\IState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\SniperEnemyContext.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MovingState.cs" />
+    <Compile Include="Assets\Scripts\Battle\Projectiles\ProjectileWrapper.cs" />
     <Compile Include="Assets\Scripts\Battle\Services\ProjectilePool.cs" />
-    <Compile Include="Assets\Scripts\Battle\Services\Exceptions\PoolException.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Rotation\SpecialRotation.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Movable.cs" />
+    <Compile Include="Assets\Scripts\Battle\Exceptions\PoolException.cs" />
     <Compile Include="Assets\Scripts\Battle\InputSystem\KeyboardInputSystem.cs" />
-    <Compile Include="Assets\Scripts\Battle\Attackers\Attacker.cs" />
-    <Compile Include="Assets\Scripts\Battle\Services\Abstract\IProjectileWrapper.cs" />
-    <Compile Include="Assets\Scripts\Battle\ProjectileTypes\BasicLaunchable.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedMoves\BasicMoves.cs" />
-    <Compile Include="Assets\Scripts\Battle\Player\Movement\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ToDelete.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Attack\Attacker.cs" />
+    <Compile Include="Assets\Scripts\Battle\Projectiles\ProjectileType.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Rotation\RotateTowardsMovement.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\IProjectileWrapper.cs" />
+    <Compile Include="Assets\Scripts\Battle\Projectiles\InstantType.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\EnemyContext.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Attack\CompositeAttacker.cs" />
     <Compile Include="Assets\Scripts\Battle\InputSystem\MobileInputSystem.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\AttackState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\Circular.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Installers\BattleInstaller.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\IPlayer.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\Player.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Battle\Battle.asmdef" />
@@ -275,6 +289,21 @@
     </Reference>
     <Reference Include="NugetForUnity">
       <HintPath>Assets\Plugins\NuGet\Editor\NugetForUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -632,6 +661,10 @@
     <ProjectReference Include="Joysticks.csproj">
       <Project>{44B5EA84-A25E-E797-531B-91FD596C8E56}</Project>
       <Name>Joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject.csproj">
+      <Project>{405D2632-82B0-F62A-7D0B-521C1BC344CC}</Project>
+      <Name>Zenject</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

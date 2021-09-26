@@ -1,7 +1,8 @@
 {
     "name": "Battle",
     "references": [
-        "Joysticks"
+        "Joysticks",
+        "Zenject"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
