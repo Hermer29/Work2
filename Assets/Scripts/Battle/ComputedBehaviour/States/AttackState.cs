@@ -9,34 +9,44 @@ namespace Work2.Battle.ComputedBehaviour.States
     public class AttackState : IState
     {
         private SpecialRotation _rotation;
-        private GameObject _enemy;
-        private Transform _playersTransform;
+        private GameObject _attackerObject;
+        private Transform _attackableTransform;
         private Vector2 _attackVector;
-        private Attacker _enemyAttacker;
+        private Attacker _attacker;
 
         public event Action WorkFinished;
 
-        public AttackState(GameObject enemy, Transform playersTransform)
+        public AttackState(GameObject attacker, Transform attackable)
         {
-            _enemy = enemy;
-            _playersTransform = playersTransform;
-            _rotation = _enemy.GetComponent<SpecialRotation>();
-            _enemyAttacker = _enemy.GetComponent<Attacker>();
+            _attackerObject = attacker;
+            _attackableTransform = attackable;
+            _rotation = _attackerObject.GetComponent<SpecialRotation>();
+            _attacker = _attackerObject.GetComponent<Attacker>();
+        }
+
+        protected void UpdateAttackPosition()
+        {
+            var localVector = _attackableTransform.position - _attackerObject.transform.position;
+            _attackVector = localVector;
+        }
+
+        public virtual void OnUpdate(Vector2 attackVector, Attacker attacker, Action workFinished)
+        {
+            _attacker.Attack(attackVector);
+            WorkFinished?.Invoke();
         }
 
         public void Exit() { }
 
         public void Start()
         {
-            var localVector = _playersTransform.position - _enemy.transform.position;
-            _attackVector = localVector;
-            _enemy.transform.rotation = _rotation.RotationToTarget2D(_attackVector);
+            UpdateAttackPosition();
+            _attackerObject.transform.rotation = _rotation.RotationToTarget2D(_attackVector);
         }
 
         public void Update()
         {
-            _enemyAttacker.Shot(_attackVector);
-            WorkFinished?.Invoke();
+            OnUpdate(_attackVector, _attacker, () => WorkFinished?.Invoke());
         }
     }
 }
