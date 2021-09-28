@@ -4,7 +4,7 @@ namespace Work2.Battle.Services
 {
     public interface IProjectilePool
     {
-        IProjectileWrapper GetOne();
+        IDealingDamage GetOne();
     }
 
     public interface IPlayerProjectilePool : IProjectilePool

@@ -18,7 +18,7 @@ namespace Work2.Battle.ComputedBehaviour.States
 
         public override void OnUpdate(Vector2 attackVector, Attacker attacker, Action workFinished)
         {
-            if (_joystick.Direction.magnitude > 0.1f)
+            if (_joystick.Direction.magnitude > 0.2f)
                 workFinished.Invoke();
 
             if (_lastShotTime + _fireRate > Time.time)

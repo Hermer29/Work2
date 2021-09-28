@@ -25,7 +25,7 @@ namespace Work2.Battle.Services
             _projectiles = beforeFilling;
         }
 
-        public IProjectileWrapper GetOne()
+        public IDealingDamage GetOne()
         {
             foreach(var projectile in _projectiles)
             {
@@ -33,7 +33,7 @@ namespace Work2.Battle.Services
                     continue;
 
                 projectile.SetActive(true);
-                return new ProjectileWrapper(projectile);
+                return ProjectileWrapper.PrepareFirst(projectile);
             }
             throw new PoolException("Pool has no more free elements. To fix this error increase _poolSize value");
         }

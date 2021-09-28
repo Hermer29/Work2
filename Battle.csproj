@@ -55,31 +55,46 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Battle\Entities\Attack\AttackMethods\AttackMethod.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\DelayState.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\Attack\BasicAttacker.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\Entities\IState.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\SniperEnemyContext.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\ArcherEnemyContext.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MovingState.cs" />
-    <Compile Include="Assets\Scripts\Battle\Projectiles\ProjectileWrapper.cs" />
-    <Compile Include="Assets\Scripts\Battle\Services\ProjectilePool.cs" />
+    <Compile Include="Assets\Scripts\Battle\Projectile\ProjectileWrapper.cs" />
+    <Compile Include="Assets\Scripts\Battle\Services\Pool\ProjectilePool.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Installers\BattleInstaller.cs" />
     <Compile Include="Assets\Scripts\Battle\Entities\Rotation\SpecialRotation.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\Circular.cs" />
     <Compile Include="Assets\Scripts\Battle\Entities\Movable.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\PlayerMark.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Hitbox.cs" />
     <Compile Include="Assets\Scripts\Battle\Exceptions\PoolException.cs" />
     <Compile Include="Assets\Scripts\Battle\InputSystem\KeyboardInputSystem.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\CharacterMark.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\ArcherMark.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\PlayerContext.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ToDelete.cs" />
     <Compile Include="Assets\Scripts\Battle\Entities\Attack\Attacker.cs" />
-    <Compile Include="Assets\Scripts\Battle\Projectiles\ProjectileType.cs" />
+    <Compile Include="Assets\Scripts\Battle\Projectile\Types\ProjectileType.cs" />
     <Compile Include="Assets\Scripts\Battle\Entities\Rotation\RotateTowardsMovement.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\IProjectileWrapper.cs" />
-    <Compile Include="Assets\Scripts\Battle\Projectiles\InstantType.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\EnemyContext.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\Attack\CompositeAttacker.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Damagable.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\IPlayer.cs" />
+    <Compile Include="Assets\Scripts\Battle\Services\EnemyService.cs" />
+    <Compile Include="Assets\Scripts\Battle\Projectile\IProjectileWrapper.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\PlayerControlState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\PlayerAttackState.cs" />
+    <Compile Include="Assets\Scripts\Battle\Services\Pool\IProjectilePool.cs" />
+    <Compile Include="Assets\Scripts\Battle\Projectile\Types\InstantType.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Attack\AttackMethods\IPlayerAttackMethod.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\StateMachineContext.cs" />
     <Compile Include="Assets\Scripts\Battle\InputSystem\MobileInputSystem.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\AttackState.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\Circular.cs" />
-    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Installers\BattleInstaller.cs" />
-    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\IPlayer.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\Player.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\EnemyMark.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\MeleeEnemyContext.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MoveToPlayerState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MeleeAttackState.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\MeleeMark.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Battle\Battle.asmdef" />
@@ -304,6 +319,9 @@
     </Reference>
     <Reference Include="Zenject-usage">
       <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

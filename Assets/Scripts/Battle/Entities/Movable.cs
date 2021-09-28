@@ -36,7 +36,7 @@ namespace Work2.Battle.Entities
         {
             LastDirection = localDirection;
             Moving?.Invoke(localDirection);
-            _body.MovePosition((Vector2)_body.gameObject.transform.position + localDirection * (Time.deltaTime * _speed));
+            _body.MovePosition((Vector2)_body.gameObject.transform.position + localDirection * (_speed));
         }
 
         public virtual void Stop()

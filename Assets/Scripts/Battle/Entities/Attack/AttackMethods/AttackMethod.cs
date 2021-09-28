@@ -25,12 +25,22 @@ namespace Work2.Battle.Entities.Attack.AttackMethods
             current._inner = newMethod;
         }
 
+        public virtual void Attack(GameObject target)
+        {
+            var targetDamagable = target.GetComponent<Damagable>();
+            targetDamagable.GainDamage(_source.damageAmount);
+        }
+
         public virtual void Attack(Vector2 localDirection)
         {
-            var projectileForLaunch = _pool.GetOne();
-            projectileForLaunch.WithPosition(_source.transform.position);
-            projectileForLaunch.WithRotationTo(localDirection);
-            projectileForLaunch.Launch(localDirection, 2);
+            var dealingDamage = _pool.GetOne();
+            var positionBuilder = dealingDamage.WithDamage(_source.damageAmount);
+
+            positionBuilder.WithPosition(_source.transform.position + (Vector3) localDirection.normalized * 0.2f);
+            positionBuilder.WithRotationTo(localDirection);
+            var launchable = positionBuilder.SetTransform();
+
+            launchable.Launch(localDirection, _source.shotForce);
         }
     }
 }

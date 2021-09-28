@@ -23,7 +23,7 @@ namespace Work2.Battle.ComputedBehaviour.States
 
         public void Update()
         {
-            if (_joystick.Direction.magnitude < 0.1f)
+            if (_joystick.Direction.magnitude < 0.2f)
                 WorkFinished?.Invoke();
         }
     }

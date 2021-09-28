@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Work2.Battle.CompositeRoot;
 using Zenject;
@@ -19,16 +20,16 @@ namespace Work2.Battle.Services
         public GameObject GetNearest()
         {
             var playerPosition = _player.PositionInfo().position;
-            var biggestDistance = 0f;
+            var lowestDistance = Mathf.Infinity;
             GameObject foundEnemy = null;
 
             foreach(var enemy in _enemies)
             {
                 var vectorToEnemy = enemy.transform.position - playerPosition;
                 var sqrMagnitude = vectorToEnemy.sqrMagnitude;
-                if(sqrMagnitude > biggestDistance)
+                if(sqrMagnitude < lowestDistance)
                 {
-                    biggestDistance = sqrMagnitude;
+                    lowestDistance = sqrMagnitude;
                     foundEnemy = enemy;
                 }
             }

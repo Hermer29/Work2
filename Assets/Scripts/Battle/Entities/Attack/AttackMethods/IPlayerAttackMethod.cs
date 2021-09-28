@@ -10,6 +10,7 @@ namespace Work2.Battle.Entities.Attack.AttackMethods
     {
         void AddMethod(AttackMethod newMethod);
         void Attack(Vector2 localDirection);
+        void Attack(GameObject target);
     }
 
 }

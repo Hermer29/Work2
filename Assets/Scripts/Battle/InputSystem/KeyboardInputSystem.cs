@@ -19,7 +19,7 @@ namespace Work2.Battle.InputSystem
         {
             if (Input.GetKey(key))
             {
-                _movable.Move(vector);
+                _movable.Move(vector * Time.deltaTime);
             }
         }
     }

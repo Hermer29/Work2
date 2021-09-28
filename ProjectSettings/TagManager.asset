@@ -15,11 +15,11 @@ TagManager:
   - 
   - Enemies
   - EnemyProjectiles
+  - AllieProjectiles
   - Surroundings
-  - 
-  - 
-  - 
-  - 
+  - PlayerHitbox
+  - Player
+  - EnemyHitbox
   - 
   - 
   - 

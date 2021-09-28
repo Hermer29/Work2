@@ -55,24 +55,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\RepositoryType.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NuspecEditor.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetPackage.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetPackageIdentifier.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetHelper.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\PackagesConfigFile.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetPackageSource.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetODataResponse.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetPreferences.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\DependencyTreeViewer.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NuspecContentFile.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NuspecFile.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetFrameworkGroup.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\Tests\Editor\NuGetTests.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetWindow.cs" />
-    <Compile Include="Assets\Plugins\NuGetForUnity-master\Assets\NuGet\Editor\NugetConfigFile.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshLinkEditor.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshModifierEditor.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshSurfaceEditor2d.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshAssetManager2d.cs" />
+    <Compile Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshAssetManager.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Plugins\NavMeshPlus-master\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef" />
+     <None Include="Assets\Plugins\NuGet\Editor\NugetForUnity.dll" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity\2020.1.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -276,6 +270,24 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="NugetForUnity">
+      <HintPath>Assets\Plugins\NuGet\Editor\NugetForUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -718,9 +730,49 @@
       <Project>{012B217B-E499-84A9-69B1-FD7BD8EF69C4}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{D1540B6D-0589-CE82-B4DB-30C988A21091}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{D770DD43-37E0-B491-967B-61EB697C3C94}</Project>
+      <Name>Zenject-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Joysticks.csproj">
+      <Project>{44B5EA84-A25E-E797-531B-91FD596C8E56}</Project>
+      <Name>Joysticks</Name>
+    </ProjectReference>
     <ProjectReference Include="Battle.csproj">
       <Project>{35E481AB-A251-1D20-E536-18BE05FB2FAE}</Project>
       <Name>Battle</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{F1688D7B-984B-6245-3149-D27089CF7396}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-ReflectionBaking-Editor.csproj">
+      <Project>{4E87605F-139B-28A5-7119-317960C5C072}</Project>
+      <Name>Zenject-ReflectionBaking-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Nothke.DXHighlighter.csproj">
+      <Project>{336B3EEE-6B46-723A-36BB-4BADDB464E5A}</Project>
+      <Name>Nothke.DXHighlighter</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{0E9413DB-A29A-9EAB-D3A2-B483FA763882}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{8ECDD61D-A31A-662D-58C3-132261993E2E}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-PoolMonitor-Editor.csproj">
+      <Project>{F2F7CA6F-4190-B370-FC0A-9B9BCEBE57B3}</Project>
+      <Name>Zenject-PoolMonitor-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject.csproj">
+      <Project>{405D2632-82B0-F62A-7D0B-521C1BC344CC}</Project>
+      <Name>Zenject</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

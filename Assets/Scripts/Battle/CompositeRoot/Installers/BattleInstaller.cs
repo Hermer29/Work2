@@ -25,7 +25,6 @@ namespace Work2.Battle.CompositeRoot.Installers
             Container.Bind<IPlayerAttackMethod>().FromInstance(new AttackMethod(playerAttacker, _projectilePoolForPlayer)).AsCached();
             Container.Bind<EnemyService>().FromInstance(_enemyService).AsCached();
             Container.Bind<Joystick>().FromInstance(_joystick).AsCached();
-
         }
     }
 }

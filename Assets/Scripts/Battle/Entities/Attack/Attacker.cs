@@ -6,10 +6,11 @@ using Work2.Battle.Services;
 
 namespace Work2.Battle.Entities.Attack
 {
-    public  class Attacker : MonoBehaviour
+    public class Attacker : MonoBehaviour
     {
-        [SerializeField] private float _shotForce = 2.5f;
-        public readonly float damageAmount = 100;
+        public float shotForce = 2.5f;
+        public float damageAmount = 100;
+        public float attackRate = 1f;
         private Vector3 _attackDirection;
         private IAttackMethod _method;
 
@@ -21,8 +22,14 @@ namespace Work2.Battle.Entities.Attack
 
         public void Attack(Vector2 localTarget)
         {
-            _method.Attack(localTarget * _shotForce);
+            _method.Attack(localTarget);
             _attackDirection = localTarget;
+        }
+
+        public void Attack(GameObject target)
+        {
+            _method.Attack(target);
+            _attackDirection = target.transform.position;
         }
 
         public void AddMethod(AttackMethod method)

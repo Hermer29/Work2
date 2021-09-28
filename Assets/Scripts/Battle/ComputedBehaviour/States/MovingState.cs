@@ -41,7 +41,7 @@ namespace Work2.Battle.ComputedBehaviour.States
             if (Time.time - _startTime > 2)
                 WorkFinished?.Invoke();
 
-            _enemyMovable.Move(_movementVector);
+            _enemyMovable.Move(_movementVector * Time.deltaTime);
         }
 
         private Vector2 GetMovementVector(float distance)

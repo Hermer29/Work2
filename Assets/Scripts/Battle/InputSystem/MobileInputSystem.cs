@@ -10,8 +10,8 @@ namespace Work2.Battle.InputSystem
 
         private void Update()
         {
-            if(_joystick.Direction.magnitude >= 0.1f)
-                _movable.Move(_joystick.Direction);
+            if(_joystick.Direction.magnitude >= 0.2f)
+                _movable.Move(_joystick.Direction * Time.deltaTime);
         }
     }
 }

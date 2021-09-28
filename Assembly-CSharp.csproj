@@ -262,6 +262,9 @@
     <Reference Include="Zenject-usage">
       <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
     </Reference>
@@ -706,6 +709,10 @@
       <Project>{4E87605F-139B-28A5-7119-317960C5C072}</Project>
       <Name>Zenject-ReflectionBaking-Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Nothke.DXHighlighter.csproj">
+      <Project>{336B3EEE-6B46-723A-36BB-4BADDB464E5A}</Project>
+      <Name>Nothke.DXHighlighter</Name>
+    </ProjectReference>
     <ProjectReference Include="Zenject-PoolMonitor-Editor.csproj">
       <Project>{F2F7CA6F-4190-B370-FC0A-9B9BCEBE57B3}</Project>
       <Name>Zenject-PoolMonitor-Editor</Name>
@@ -713,6 +720,18 @@
     <ProjectReference Include="Zenject.csproj">
       <Project>{405D2632-82B0-F62A-7D0B-521C1BC344CC}</Project>
       <Name>Zenject</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{AC160419-3369-4C2D-03FE-6B7F48E4DC5B}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{3B2B787C-FF2F-1C20-592F-DD121B1600F5}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{6086A8AC-2EF0-E9EF-B5CB-AE59852373B5}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
