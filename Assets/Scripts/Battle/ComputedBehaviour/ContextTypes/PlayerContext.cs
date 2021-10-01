@@ -7,7 +7,7 @@ using Zenject;
 
 namespace Work2.Battle.ComputedBehaviour.ContextTypes
 {
-    class PlayerContext : StateMachineContext
+    public class PlayerContext : StateMachineContext
     {
         private EnemyService _enemyService;
         private Joystick _joystick;

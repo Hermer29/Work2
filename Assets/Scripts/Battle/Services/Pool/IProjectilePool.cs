@@ -1,10 +1,12 @@
-﻿using Work2.Battle.Services.Abstract;
+﻿using UnityEngine;
+using Work2.Battle.Services.Abstract;
 
 namespace Work2.Battle.Services
 {
     public interface IProjectilePool
     {
         IDealingDamage GetOne();
+        void ReplacePrefabWithOneWithLayer(LayerMask other);
     }
 
     public interface IPlayerProjectilePool : IProjectilePool
@@ -17,4 +19,8 @@ namespace Work2.Battle.Services
 
     }
 
+    public interface ISplasherProjectilePool : IProjectilePool
+    {
+        
+    }
 }

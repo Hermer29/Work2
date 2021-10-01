@@ -20,8 +20,8 @@ TagManager:
   - PlayerHitbox
   - Player
   - EnemyHitbox
-  - 
-  - 
+  - Loot
+  - IgnoreAllExceptEnemies
   - 
   - 
   - 

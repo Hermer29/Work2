@@ -2,7 +2,9 @@
     "name": "Battle",
     "references": [
         "Joysticks",
-        "Zenject"
+        "Zenject",
+        "AstarPathfindingProject",
+        "AstarPathfindingProjectEditor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

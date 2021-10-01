@@ -7,7 +7,7 @@ using Zenject;
 
 namespace Work2.Battle.ComputedBehaviour.ContextTypes
 {
-    public class ArcherEnemyContext : StateMachineContext
+    public class SplashEnemyContext : StateMachineContext
     {
         private static Transform _playerTransform;
 

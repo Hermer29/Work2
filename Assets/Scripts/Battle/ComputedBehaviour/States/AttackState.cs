@@ -42,11 +42,25 @@ namespace Work2.Battle.ComputedBehaviour.States
             WorkFinished?.Invoke();
         }
 
-        public void Exit() { }
+        public virtual void OnStart(Vector2 attackVector, Attacker attacker, Action workFinished)
+        {
+
+        }
+
+        public virtual void OnExit(Vector2 attackVector, Attacker attacker, Action workFinished)
+        {
+
+        }
+
+        public void Exit() 
+        {
+            OnExit(_attackVector, _attacker, () => WorkFinished?.Invoke());
+        }
 
         public void Start()
         {
             UpdateAttackPosition();
+            OnStart(_attackVector, _attacker, () => WorkFinished?.Invoke());
         }
 
         public void Update()

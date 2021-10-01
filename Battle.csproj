@@ -57,44 +57,60 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Battle\Entities\Attack\AttackMethods\AttackMethod.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\DelayState.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\SplasherMark.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\Entities\IState.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\ArcherEnemyContext.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\NotStateMachine\EnemyMeleeAttack.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\RangedEnemyContext.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Obstacle.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MovingState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\SplashEnemyContext.cs" />
     <Compile Include="Assets\Scripts\Battle\Projectile\ProjectileWrapper.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Attack\AttackMethods\SplashAroundAttackMethod.cs" />
     <Compile Include="Assets\Scripts\Battle\Services\Pool\ProjectilePool.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Installers\BattleInstaller.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\Rotation\SpecialRotation.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Transformation\Rotation\SpecialRotation.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\Circular.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\Movable.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Transformation\Movable.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\PlayerMark.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\Hitbox.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Health\Hitbox.cs" />
     <Compile Include="Assets\Scripts\Battle\Exceptions\PoolException.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\MeleeMark.cs" />
     <Compile Include="Assets\Scripts\Battle\InputSystem\KeyboardInputSystem.cs" />
+    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\AiDestinationSetterSetter.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\CharacterMark.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Transformation\Rotation\RotationStabilizer.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\ArcherMark.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\PlayerContext.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\PulledDrop.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ToDelete.cs" />
     <Compile Include="Assets\Scripts\Battle\Entities\Attack\Attacker.cs" />
     <Compile Include="Assets\Scripts\Battle\Projectile\Types\ProjectileType.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\Rotation\RotateTowardsMovement.cs" />
-    <Compile Include="Assets\Scripts\Battle\Entities\Damagable.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Transformation\Rotation\RotateTowardsMovement.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Health\Damagable.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\IPlayer.cs" />
+    <Compile Include="Assets\Scripts\Battle\Services\DropSystem.cs" />
     <Compile Include="Assets\Scripts\Battle\Services\EnemyService.cs" />
     <Compile Include="Assets\Scripts\Battle\Projectile\IProjectileWrapper.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\PlayerControlState.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\PlayerAttackState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\Player\PlayerControlState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\Player\PlayerAttackState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MeleeAttackState.cs" />
+    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MoveToPlayerState.cs" />
     <Compile Include="Assets\Scripts\Battle\Services\Pool\IProjectilePool.cs" />
     <Compile Include="Assets\Scripts\Battle\Projectile\Types\InstantType.cs" />
     <Compile Include="Assets\Scripts\Battle\Entities\Attack\AttackMethods\IPlayerAttackMethod.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\StateMachineContext.cs" />
     <Compile Include="Assets\Scripts\Battle\InputSystem\MobileInputSystem.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\AttackState.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Battle\Services\CashContainer.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Helpers\Player.cs" />
     <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\EnemyMark.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Health\HealthView.cs" />
     <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\ContextTypes\MeleeEnemyContext.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MoveToPlayerState.cs" />
-    <Compile Include="Assets\Scripts\Battle\ComputedBehaviour\States\MeleeAttackState.cs" />
-    <Compile Include="Assets\Scripts\Battle\CompositeRoot\Marks\MeleeMark.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\Attack\AttackMethods\SideProjectilesMethod.cs" />
+    <Compile Include="Assets\Scripts\Battle\Services\DebugGUI.cs" />
+    <Compile Include="Assets\Scripts\Battle\Services\PlayerAttackMethodSystem.cs" />
+    <Compile Include="Assets\Scripts\Battle\Entities\NextLevelTransition.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Battle\Battle.asmdef" />
@@ -302,6 +318,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="NugetForUnity">
       <HintPath>Assets\Plugins\NuGet\Editor\NugetForUnity.dll</HintPath>
     </Reference>
@@ -319,9 +338,6 @@
     </Reference>
     <Reference Include="Zenject-usage">
       <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity\2020.1.4f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -683,6 +699,14 @@
     <ProjectReference Include="Zenject.csproj">
       <Project>{405D2632-82B0-F62A-7D0B-521C1BC344CC}</Project>
       <Name>Zenject</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{AC160419-3369-4C2D-03FE-6B7F48E4DC5B}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{6086A8AC-2EF0-E9EF-B5CB-AE59852373B5}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

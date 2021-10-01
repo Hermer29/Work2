@@ -17,7 +17,7 @@ namespace Work2.Battle.Entities.Attack.AttackMethods
 
         public void AddMethod(AttackMethod newMethod)
         {
-            var current = _inner;
+            var current = this;
             while(current._inner != null)
             {
                 current = current._inner;
@@ -29,6 +29,7 @@ namespace Work2.Battle.Entities.Attack.AttackMethods
         {
             var targetDamagable = target.GetComponent<Damagable>();
             targetDamagable.GainDamage(_source.damageAmount);
+            _inner?.Attack(target);
         }
 
         public virtual void Attack(Vector2 localDirection)
@@ -41,6 +42,7 @@ namespace Work2.Battle.Entities.Attack.AttackMethods
             var launchable = positionBuilder.SetTransform();
 
             launchable.Launch(localDirection, _source.shotForce);
+            _inner?.Attack(localDirection);
         }
     }
 }
